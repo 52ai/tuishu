@@ -1,18 +1,12 @@
+果壳推书
+===========================================
+		组长：余文艳
+		组员：姚攀、汤建明、魏珊珊、吕帅、莫思雨
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+##项目的意义
+
+1.通过果壳推书SaaS应用让国科大研一新生能更好更快的找到课程学习的方法以及适合自己的课程学习书籍。<br>
+2.将高级软件工程所学到的Ruby on Rails 敏捷开发方法运用到实际项目当中去。<br>
 
 
-Hi there! Welcome to Cloud9 IDE!
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
