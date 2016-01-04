@@ -1,0 +1,8 @@
+
+
+<h1>最新推荐</h1>
+<ul>
+    <% @books.each do |book| %>
+        <li><a href="/books/<%= book.id %>"><%= book.name %></li>
+    <% end %>
+</ul>

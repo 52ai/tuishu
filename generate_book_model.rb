@@ -1,0 +1,1 @@
+generate model book name:string author:string publish:string abstract :text picture:string   
