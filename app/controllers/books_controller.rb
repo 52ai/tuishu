@@ -14,8 +14,12 @@ class BooksController < ApplicationController
     
     def create
         @book = Book.new(book_params)
-        @book.save
-        redirect_to "/books/#{@book.id}"
+        @book.picture_url= params[:file]
+        if @book.save
+           redirect_to "/books/#{@book.id}"
+        else
+            render 'new'
+        end
     end
     
     private
