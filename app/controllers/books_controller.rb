@@ -17,6 +17,15 @@ class BooksController < ApplicationController
         @book.save
         redirect_to "/books/#{@book.id}"
     end
+    def edit
+        @book = Book.find(params[:id])
+    end
+    
+    def update
+        @book = Book.find(params[:id])
+        @book.update_attributes(book_params)
+        redirect_to "/books/#{@book.id}"
+    end
     
     private
     

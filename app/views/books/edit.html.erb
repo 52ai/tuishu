@@ -1,0 +1,13 @@
+<h1>编辑<%= @book.name %></h1>
+<%= form_for(@book,:url=>{:action=> 'update'}) do |f| %>
+
+    <p><b>书名</b><br /><%= f.text_field :name %></p>
+    <p><b>作者</b><br /><%= f.text_field :author %></p>
+    <p><b>出版社</b><br /><%= f.text_field :publish %></p>
+    <p><b>内容简介</b><br /><%= f.text_area :abstract %></p>
+
+    <p><b>图片链接</b><br /><%= f.text_field :picture_url %></p>
+    
+    <p><%= f.submit "更新该书" %></p>
+    
+<% end %>
