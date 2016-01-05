@@ -1,6 +1,10 @@
 class BooksController < ApplicationController
     before_filter :check_logged_in, :only => [:edit, :update, :destroy]
     
+    def find
+       @books_find = Book.where("course = '#{params[:search_string]}'")
+    end
+    
     def new
         @book = Book.new
     end
@@ -37,7 +41,7 @@ class BooksController < ApplicationController
     private
     
         def book_params
-            params.require(:book).permit(:name, :author, :publish, :abstract, :picture_url)
+            params.require(:book).permit(:name, :author, :publish, :abstract, :picture_url,:course)
         end
     
         def check_logged_in

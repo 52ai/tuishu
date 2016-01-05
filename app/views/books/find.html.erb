@@ -1,0 +1,12 @@
+你在查找<i><%= params[:search_string] %></i>，结果如下：
+
+<ul>
+    <% @books_find.each do |book| %>
+        
+        <li><a href="/books/<%= book.id %>"><%= book.name %>(<%= book.author %>)</a>
+        [<i><a href="/books/<%= book.id %>/delete">Delete</a></i>]
+        </li>
+    <% end %>
+</ul>
+
+----小推为您找到<%= @books_find.length %>条记录----

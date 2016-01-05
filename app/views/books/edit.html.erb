@@ -1,6 +1,6 @@
 <h1>编辑<%= @book.name %></h1>
 <%= form_for(@book,:url=>{:action=> 'update'}) do |f| %>
-
+    <p><b>课程</b><br /><%= f.text_field :course %></p>
     <p><b>书名</b><br /><%= f.text_field :name %></p>
     <p><b>作者</b><br /><%= f.text_field :author %></p>
     <p><b>出版社</b><br /><%= f.text_field :publish %></p>

@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20160103052837) do
     t.string   "publish"
     t.text     "abstract"
     t.string   "picture_url"
+    t.string   "course"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

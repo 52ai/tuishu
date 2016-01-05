@@ -1,3 +1,6 @@
+<p>
+    <b>课程：</b><%= @book.course %>
+</p>
 
 <p>
     <b>书名：</b><%= @book.name %>
@@ -10,6 +13,7 @@
 <p>
     <b>出版社：</b><%= @book.publish %>
 </p>
+
 <p>
     <b>内容简介：</b><%= @book.abstract %>
 </p>
@@ -17,6 +21,9 @@
 <p>
     <img src="<%= @book.picture_url %>"  style="width:120px;height:160px;" />
 </p>
+
+
+
 
 <a href="/books/<%= @book.id %>/edit">编辑</a>
 

@@ -1,13 +1,13 @@
 <h1>我要推书</h1>
 <%= form_for(@book,:url=>{:action=>'create'}) do |f| %>
-
+    <p><b>课程</b><br /><%= f.text_field :course %></p>
     <p><b>书名</b><br /><%= f.text_field :name %></p>
     <p><b>作者</b><br /><%= f.text_field :author %></p>
     <p><b>出版社</b><br /><%= f.text_field :publish %></p>
     <p><b>内容简介</b><br /><%= f.text_area :abstract %></p>
 
     <p><b>图片链接</b><br /><%= f.text_field :picture_url %></p>
-    
+
     <p><%= f.submit "推荐该书" %></p>
     
 <% end %>

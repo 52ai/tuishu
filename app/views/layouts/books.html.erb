@@ -10,13 +10,23 @@
         <div id="header">
             <div>
                 <h1>果壳推书</h1>
+                
                 <ul id="nav">
                     <li><a href="/books/">推书主页</a></li>
                     <li><a href="/books/">注册</a></li>
                     <li><a href="/books/">登陆</a></li>
                     <li><a href="/books/new">推书</a></li>
-                </ul>
+                    
+                 <li>
+                    <%= form_tag "/books/find" do %>
+                        <%= text_field_tag :search_string, "课程名称……" %>
+                        <%= submit_tag "Search"%>
+                    <% end %>
                 
+                </li>
+                </ul>
+
+              
             </div>
         </div>
         

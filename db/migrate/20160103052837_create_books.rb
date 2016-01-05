@@ -6,6 +6,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :publish
       t.text :abstract
       t.string :picture_url
+      t.string :course
 
       t.timestamps null: false
     end
