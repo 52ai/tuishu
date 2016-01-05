@@ -3,6 +3,9 @@
 <h1>最新推荐</h1>
 <ul>
     <% @books.each do |book| %>
-        <li><a href="/books/<%= book.id %>"><%= book.name %></li>
+        
+        <li><a href="/books/<%= book.id %>"><%= book.name %></a>
+        [<i><a href="/books/<%= book.id %>/delete">Delete</a></i>]
+        </li>
     <% end %>
 </ul>

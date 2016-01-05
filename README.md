@@ -75,3 +75,4 @@
 		9） 更新数据表中的数据 update books set name='python基础教程', picture_url='www.mryu.top' where id=1;
 		10) 退出 .exit 或 .quit
 		
+9.新增图书编辑功能
