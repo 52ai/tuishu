@@ -1,5 +1,20 @@
 <h1>编辑<%= @book.name %></h1>
 <%= form_for(@book,:url=>{:action=> 'update'}) do |f| %>
+
+
+ <% if @book.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@book.errors.count, "error") %> prohibited
+      this book from being saved:</h2>
+    <ul>
+    <% @book.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+
     <p><b>课程</b><br /><%= f.text_field :course %></p>
     <p><b>书名</b><br /><%= f.text_field :name %></p>
     <p><b>作者</b><br /><%= f.text_field :author %></p>

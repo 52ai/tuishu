@@ -19,17 +19,25 @@ class BooksController < ApplicationController
     
     def create
         @book = Book.new(book_params)
-        @book.save
-        redirect_to "/books/#{@book.id}"
+        if @book.save
+            redirect_to "/books/#{@book.id}"
+        else
+            render 'new'
+        end
+        
     end
+    
     def edit
         @book = Book.find(params[:id])
     end
     
     def update
         @book = Book.find(params[:id])
-        @book.update_attributes(book_params)
-        redirect_to "/books/#{@book.id}"
+        if @book.update_attributes(book_params)
+            redirect_to @book
+        else
+            render 'edit'
+        end
     end
     
     def destroy
