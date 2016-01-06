@@ -1,11 +1,18 @@
 class UsersController < ApplicationController
   def create
+    print "user: #{params[:user]}"
     params.permit!
     @user = User.new(params[:user])
-    if @user.save
-        session['loginedUser'] = @user
-        redirect_to :controller=>'books',:action=>'index'
+    if params[:user]["password"] == params[:user]["password_confirmation"] 
+      if @user.save
+         flash[:notice] = '成功注册！'  
+         session['loginedUser'] = @user
+         redirect_to :controller=>'books',:action=>'index'
+      else
+         redirect_to :controller=>'users',:action=>'new'
+      end
     else
+        flash[:notice] = '两次输入的密码不相同'
         redirect_to :controller=>'users',:action=>'new'
     end
   end

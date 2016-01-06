@@ -65,8 +65,15 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  
 
+  get 'home/login'
+  post 'home/checkLogin'
+  get 'home/logout'
+  post "users/create"
+  #get 'users/create'
+  get 'users/new'
+  
+  get 'layouts/books'
 
 end
 

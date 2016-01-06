@@ -45,3 +45,27 @@ books = [{:name => '黑客与画家',
 books.each do |book|
   Book.create!(book)
 end
+
+
+
+users = [{:userid => '201548300108043', 
+          :username => '魏珊珊', 
+          :password => '111111',
+          :sex => '1',
+          },
+        {:userid => '201548300108042', 
+          :username => '魏珊珊', 
+          :password => '111111',
+          :sex => '1',
+          },
+          {:userid => '201548300108043', 
+          :username => '魏珊珊', 
+          :password => '111111',
+          :sex => '1',
+          },
+
+  	 ]
+
+users.each do |user|
+  User.create!(user)
+end
