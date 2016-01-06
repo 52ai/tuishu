@@ -15,6 +15,7 @@ class BooksController < ApplicationController
     
     def index
         @books = Book.all
+        @user = session['loginedUser']
     end
     
     def create
