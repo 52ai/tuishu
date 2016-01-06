@@ -1,0 +1,85 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 500px;
+  background-color: #0077D9;
+}
+  
+.register-body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url("bg-login.jpg");
+}
+
+.login-body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url("bg-register.jpg");
+}
+
+.register {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  color: white;
+  font-family: Arial;
+  width: 40px;
+  height: 20px;
+  font-size: 18px; }
+
+.login {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 20px;
+  color: white;
+  font-size: 18px; }
+  
+.register-header {
+  margin-top: 37px;
+	margin-left: 206px;
+	font-family: Georgia;
+
+	font-size: 40px;
+  width: 400px; }
+  
+.register-subtitle {
+	margin-top: 30px;
+	margin-left: 206px;
+	font-family: Georgia;
+
+	font-size: 18px;
+  width: 400px; }
+  
+.field {
+	margin-top: 20px;
+	text-align: left;
+	margin-left: 280px;
+	width:400px;}
+	
+.reg_agreement{
+ 	margin-top: 40px;
+	text-align: center;
+	margin-left: 175px;
+	width:400px; }
+	
+.reg_agreement_actions{
+  margin-top: 40px;
+	text-align: left;
+	margin-left: 360px;}
+	
+.relogin {
+	position: absolute;
+	top: 200px; 
+	right: 340px;
+	text-align: center;
+	width:400px; }
+/*# sourceMappingURL=home.css.map */
