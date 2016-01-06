@@ -3,14 +3,17 @@ class BooksController < ApplicationController
     
     def find
        @books_find = Book.where("course = '#{params[:search_string]}'")
+        @user = session['loginedUser']
     end
     
     def new
         @book = Book.new
+         @user = session['loginedUser']
     end
     
     def show
         @book = Book.find(params[:id])
+         @user = session['loginedUser']
     end
     
     def index
@@ -22,21 +25,25 @@ class BooksController < ApplicationController
         @book = Book.new(book_params)
         @book.save
         redirect_to "/books/#{@book.id}"
+         @user = session['loginedUser']
     end
     def edit
         @book = Book.find(params[:id])
+         @user = session['loginedUser']
     end
     
     def update
         @book = Book.find(params[:id])
         @book.update_attributes(book_params)
         redirect_to "/books/#{@book.id}"
+         @user = session['loginedUser']
     end
     
     def destroy
         @book = Book.find(params[:id])
         @book.destroy
         redirect_to '/books/'
+         @user = session['loginedUser']
     end
     
     

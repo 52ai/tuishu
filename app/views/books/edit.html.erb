@@ -1,3 +1,10 @@
+<div class="have_login" style="position:absolute;top:10px;right:10px;color:white;">
+         <% if @user!=nil %>
+            <span>已登录！</span>
+         <% else %>
+            <span>未登录！</span>
+         <% end %>
+      </div>
 <h1>编辑<%= @book.name %></h1>
 <%= form_for(@book,:url=>{:action=> 'update'}) do |f| %>
     <p><b>课程</b><br /><%= f.text_field :course %></p>

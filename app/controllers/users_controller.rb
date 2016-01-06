@@ -7,7 +7,7 @@ class UsersController < ApplicationController
       if @user.save
          flash[:notice] = '成功注册！'  
          session['loginedUser'] = @user
-         redirect_to :controller=>'books',:action=>'index'
+         redirect_to :controller=>'layouts',:action=>'application'
       else
          redirect_to :controller=>'users',:action=>'new'
       end
